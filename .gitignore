@@ -42,7 +42,8 @@ local.properties
 *.user
 *.sln.docstates
 *.sln
-*.vbproj
+#*.vbproj
+
 Setup/
 My Project/
 
