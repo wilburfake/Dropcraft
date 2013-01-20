@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Main
-    Inherits DevComponents.DotNetBar.Office2007Form
+    Inherits DevComponents.DotNetBar.Metro.MetroForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -59,7 +59,7 @@ Partial Class Main
         Me.OptionsOpenButton.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
         Me.OptionsOpenButton.Location = New System.Drawing.Point(13, 63)
         Me.OptionsOpenButton.Name = "OptionsOpenButton"
-        Me.OptionsOpenButton.Size = New System.Drawing.Size(257, 23)
+        Me.OptionsOpenButton.Size = New System.Drawing.Size(123, 23)
         Me.OptionsOpenButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.OptionsOpenButton.TabIndex = 9
         Me.OptionsOpenButton.Text = "Options"
@@ -68,20 +68,22 @@ Partial Class Main
         '
         Me.HelpButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.HelpButton.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.HelpButton.Location = New System.Drawing.Point(13, 93)
+        Me.HelpButton.Location = New System.Drawing.Point(142, 63)
         Me.HelpButton.Name = "HelpButton"
-        Me.HelpButton.Size = New System.Drawing.Size(257, 23)
+        Me.HelpButton.Size = New System.Drawing.Size(129, 23)
         Me.HelpButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.HelpButton.TabIndex = 10
         Me.HelpButton.Text = "Help"
         '
         'backupName
         '
+        Me.backupName.BackColor = System.Drawing.Color.White
         '
         '
         '
         Me.backupName.Border.Class = "TextBoxBorder"
         Me.backupName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.backupName.ForeColor = System.Drawing.Color.Black
         Me.backupName.Location = New System.Drawing.Point(13, 37)
         Me.backupName.Name = "backupName"
         Me.backupName.Size = New System.Drawing.Size(123, 20)
@@ -90,11 +92,13 @@ Partial Class Main
         '
         'DownloadName
         '
+        Me.DownloadName.BackColor = System.Drawing.Color.White
         '
         '
         '
         Me.DownloadName.Border.Class = "TextBoxBorder"
         Me.DownloadName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DownloadName.ForeColor = System.Drawing.Color.Black
         Me.DownloadName.Location = New System.Drawing.Point(142, 37)
         Me.DownloadName.Name = "DownloadName"
         Me.DownloadName.Size = New System.Drawing.Size(128, 20)
@@ -106,7 +110,7 @@ Partial Class Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(282, 118)
+        Me.ClientSize = New System.Drawing.Size(282, 97)
         Me.Controls.Add(Me.DownloadName)
         Me.Controls.Add(Me.backupName)
         Me.Controls.Add(Me.HelpButton)

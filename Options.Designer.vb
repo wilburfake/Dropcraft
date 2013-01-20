@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Options
-    Inherits System.Windows.Forms.Form
+    Inherits DevComponents.DotNetBar.Metro.MetroForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -23,52 +23,111 @@ Partial Class Options
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Options))
-        Me.DropboxLocBox = New System.Windows.Forms.TextBox()
-        Me.DropboxBrowse = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
+        Me.TextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.DropboxLocBox = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.DropboxBrowse = New DevComponents.DotNetBar.ButtonX()
+        Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
+        Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
         Me.SuspendLayout()
+        '
+        'ButtonX1
+        '
+        Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.ButtonX1.Location = New System.Drawing.Point(197, 83)
+        Me.ButtonX1.Name = "ButtonX1"
+        Me.ButtonX1.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonX1.TabIndex = 3
+        Me.ButtonX1.Text = "Browse"
+        '
+        'TextBoxX1
+        '
+        Me.TextBoxX1.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.TextBoxX1.Border.Class = "TextBoxBorder"
+        Me.TextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TextBoxX1.ForeColor = System.Drawing.Color.Black
+        Me.TextBoxX1.Location = New System.Drawing.Point(12, 83)
+        Me.TextBoxX1.Name = "TextBoxX1"
+        Me.TextBoxX1.Size = New System.Drawing.Size(177, 20)
+        Me.TextBoxX1.TabIndex = 4
         '
         'DropboxLocBox
         '
-        Me.DropboxLocBox.Location = New System.Drawing.Point(12, 34)
+        Me.DropboxLocBox.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.DropboxLocBox.Border.Class = "TextBoxBorder"
+        Me.DropboxLocBox.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DropboxLocBox.ForeColor = System.Drawing.Color.Black
+        Me.DropboxLocBox.Location = New System.Drawing.Point(12, 28)
         Me.DropboxLocBox.Name = "DropboxLocBox"
-        Me.DropboxLocBox.Size = New System.Drawing.Size(178, 20)
-        Me.DropboxLocBox.TabIndex = 0
+        Me.DropboxLocBox.Size = New System.Drawing.Size(177, 20)
+        Me.DropboxLocBox.TabIndex = 5
         '
         'DropboxBrowse
         '
-        Me.DropboxBrowse.Location = New System.Drawing.Point(197, 34)
+        Me.DropboxBrowse.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.DropboxBrowse.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.DropboxBrowse.Location = New System.Drawing.Point(197, 25)
         Me.DropboxBrowse.Name = "DropboxBrowse"
         Me.DropboxBrowse.Size = New System.Drawing.Size(75, 23)
-        Me.DropboxBrowse.TabIndex = 1
+        Me.DropboxBrowse.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.DropboxBrowse.TabIndex = 6
         Me.DropboxBrowse.Text = "Browse"
-        Me.DropboxBrowse.UseVisualStyleBackColor = True
         '
-        'Label1
+        'LabelX1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(98, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(92, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Dropbox Directory"
         '
-        'Form2
+        '
+        '
+        Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX1.Location = New System.Drawing.Point(12, 54)
+        Me.LabelX1.Name = "LabelX1"
+        Me.LabelX1.Size = New System.Drawing.Size(260, 23)
+        Me.LabelX1.TabIndex = 7
+        Me.LabelX1.Text = "Minecraft Location"
+        Me.LabelX1.TextAlignment = System.Drawing.StringAlignment.Center
+        '
+        'LabelX2
+        '
+        '
+        '
+        '
+        Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX2.Location = New System.Drawing.Point(12, -1)
+        Me.LabelX2.Name = "LabelX2"
+        Me.LabelX2.Size = New System.Drawing.Size(260, 23)
+        Me.LabelX2.TabIndex = 8
+        Me.LabelX2.Text = "Dropbox Location"
+        Me.LabelX2.TextAlignment = System.Drawing.StringAlignment.Center
+        '
+        'Options
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 66)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(284, 118)
+        Me.Controls.Add(Me.LabelX2)
+        Me.Controls.Add(Me.LabelX1)
         Me.Controls.Add(Me.DropboxBrowse)
         Me.Controls.Add(Me.DropboxLocBox)
+        Me.Controls.Add(Me.TextBoxX1)
+        Me.Controls.Add(Me.ButtonX1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form2"
+        Me.Name = "Options"
         Me.Text = "Options"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents DropboxLocBox As System.Windows.Forms.TextBox
-    Friend WithEvents DropboxBrowse As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents TextBoxX1 As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents DropboxLocBox As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents DropboxBrowse As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents LabelX1 As DevComponents.DotNetBar.LabelX
+    Friend WithEvents LabelX2 As DevComponents.DotNetBar.LabelX
 End Class

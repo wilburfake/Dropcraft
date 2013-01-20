@@ -1,6 +1,6 @@
 ﻿Public Class Options
 
-    Private Sub DropboxBrowse_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DropboxBrowse.Click
+    Private Sub DropboxBrowse_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         ' Declare a variable named theFolderBrowser of type FolderBrowserDialog.
         Dim theFolderBrowser As New FolderBrowserDialog
@@ -47,7 +47,7 @@
         End If
     End Sub
 
-    Private Sub DropboxLocBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DropboxLocBox.TextChanged
+    Private Sub DropboxLocBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 End Class
