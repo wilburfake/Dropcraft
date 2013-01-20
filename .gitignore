@@ -40,6 +40,10 @@ local.properties
 *.suo
 *.user
 *.sln.docstates
+*.sln
+*.vbproj
+Setup/
+My Project/
 
 # Build results
 [Dd]ebug/
