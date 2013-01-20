@@ -29,13 +29,14 @@ Partial Class Main
         Me.HelpButton = New DevComponents.DotNetBar.ButtonX()
         Me.backupName = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.DownloadName = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.LoginButton = New DevComponents.DotNetBar.ButtonX()
         Me.SuspendLayout()
         '
         'UploadButton
         '
         Me.UploadButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.UploadButton.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.UploadButton.Location = New System.Drawing.Point(13, 8)
+        Me.UploadButton.Location = New System.Drawing.Point(12, 43)
         Me.UploadButton.Name = "UploadButton"
         Me.UploadButton.Size = New System.Drawing.Size(75, 23)
         Me.UploadButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -46,7 +47,7 @@ Partial Class Main
         '
         Me.DownloadButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.DownloadButton.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.DownloadButton.Location = New System.Drawing.Point(196, 8)
+        Me.DownloadButton.Location = New System.Drawing.Point(195, 43)
         Me.DownloadButton.Name = "DownloadButton"
         Me.DownloadButton.Size = New System.Drawing.Size(75, 23)
         Me.DownloadButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -57,7 +58,7 @@ Partial Class Main
         '
         Me.OptionsOpenButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.OptionsOpenButton.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.OptionsOpenButton.Location = New System.Drawing.Point(13, 63)
+        Me.OptionsOpenButton.Location = New System.Drawing.Point(12, 98)
         Me.OptionsOpenButton.Name = "OptionsOpenButton"
         Me.OptionsOpenButton.Size = New System.Drawing.Size(123, 23)
         Me.OptionsOpenButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -68,7 +69,7 @@ Partial Class Main
         '
         Me.HelpButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.HelpButton.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.HelpButton.Location = New System.Drawing.Point(142, 63)
+        Me.HelpButton.Location = New System.Drawing.Point(141, 98)
         Me.HelpButton.Name = "HelpButton"
         Me.HelpButton.Size = New System.Drawing.Size(129, 23)
         Me.HelpButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -84,7 +85,7 @@ Partial Class Main
         Me.backupName.Border.Class = "TextBoxBorder"
         Me.backupName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.backupName.ForeColor = System.Drawing.Color.Black
-        Me.backupName.Location = New System.Drawing.Point(13, 37)
+        Me.backupName.Location = New System.Drawing.Point(12, 72)
         Me.backupName.Name = "backupName"
         Me.backupName.Size = New System.Drawing.Size(123, 20)
         Me.backupName.TabIndex = 11
@@ -99,18 +100,30 @@ Partial Class Main
         Me.DownloadName.Border.Class = "TextBoxBorder"
         Me.DownloadName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.DownloadName.ForeColor = System.Drawing.Color.Black
-        Me.DownloadName.Location = New System.Drawing.Point(142, 37)
+        Me.DownloadName.Location = New System.Drawing.Point(141, 72)
         Me.DownloadName.Name = "DownloadName"
         Me.DownloadName.Size = New System.Drawing.Size(128, 20)
         Me.DownloadName.TabIndex = 12
         Me.DownloadName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.DownloadName.WatermarkText = "Backup Name"
         '
+        'LoginButton
+        '
+        Me.LoginButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.LoginButton.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.LoginButton.Location = New System.Drawing.Point(13, 3)
+        Me.LoginButton.Name = "LoginButton"
+        Me.LoginButton.Size = New System.Drawing.Size(257, 23)
+        Me.LoginButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.LoginButton.TabIndex = 13
+        Me.LoginButton.Text = "Login"
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(282, 97)
+        Me.ClientSize = New System.Drawing.Size(282, 155)
+        Me.Controls.Add(Me.LoginButton)
         Me.Controls.Add(Me.DownloadName)
         Me.Controls.Add(Me.backupName)
         Me.Controls.Add(Me.HelpButton)
@@ -132,5 +145,6 @@ Partial Class Main
     Friend WithEvents HelpButton As DevComponents.DotNetBar.ButtonX
     Friend WithEvents backupName As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents DownloadName As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents LoginButton As DevComponents.DotNetBar.ButtonX
 
 End Class

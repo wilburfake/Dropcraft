@@ -1,4 +1,6 @@
-﻿Public Class Main
+﻿Imports DropcraftConnect.Main
+
+Public Class Main
 
     Dim dropboxLocation As String
     Dim appData As String = Environment.GetEnvironmentVariable("AppData")
@@ -67,5 +69,11 @@
 
         helpCommand = "notepad " & My.Application.Info.DirectoryPath & "\help.txt"
         Shell(helpCommand)
+    End Sub
+
+    Private Sub TestButton_Click(sender As System.Object, e As System.EventArgs) Handles LoginButton.Click
+        Dim dcConnect As New DropcraftConnect.Main
+
+        dcConnect.Init("API KEY", "API SECRET")
     End Sub
 End Class
