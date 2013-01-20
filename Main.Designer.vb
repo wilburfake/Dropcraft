@@ -30,6 +30,7 @@ Partial Class Main
         Me.backupName = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.DownloadName = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.LoginButton = New DevComponents.DotNetBar.ButtonX()
+        Me.Test2 = New DevComponents.DotNetBar.ButtonX()
         Me.SuspendLayout()
         '
         'UploadButton
@@ -118,11 +119,23 @@ Partial Class Main
         Me.LoginButton.TabIndex = 13
         Me.LoginButton.Text = "Login"
         '
+        'Test2
+        '
+        Me.Test2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.Test2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.Test2.Location = New System.Drawing.Point(103, 32)
+        Me.Test2.Name = "Test2"
+        Me.Test2.Size = New System.Drawing.Size(75, 23)
+        Me.Test2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.Test2.TabIndex = 14
+        Me.Test2.Text = "Test 2"
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(282, 155)
+        Me.Controls.Add(Me.Test2)
         Me.Controls.Add(Me.LoginButton)
         Me.Controls.Add(Me.DownloadName)
         Me.Controls.Add(Me.backupName)
@@ -146,5 +159,6 @@ Partial Class Main
     Friend WithEvents backupName As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents DownloadName As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents LoginButton As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents Test2 As DevComponents.DotNetBar.ButtonX
 
 End Class

@@ -1,9 +1,13 @@
-﻿Imports DropcraftConnect.Main
+﻿Imports DropNet
 
 Public Class Main
 
     Dim dropboxLocation As String
     Dim appData As String = Environment.GetEnvironmentVariable("AppData")
+    Dim apiKey As String = "o6m9p0hgvxrkmp9"
+    Dim apiSecret As String = "9hzddkpxyc4mf0c"
+    Dim userToken As String
+    Dim userSecret As String
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim dropLocFile As String = My.Application.Info.DirectoryPath & "\droppath.txt"
@@ -71,9 +75,7 @@ Public Class Main
         Shell(helpCommand)
     End Sub
 
-    Private Sub TestButton_Click(sender As System.Object, e As System.EventArgs) Handles LoginButton.Click
-        Dim dcConnect As New DropcraftConnect.Main
-
-        dcConnect.Init("API KEY", "API SECRET")
+    Private Sub LoginButton_Click(sender As System.Object, e As System.EventArgs) Handles LoginButton.Click
+        Shell("C:/Python27/python login.py")
     End Sub
 End Class
