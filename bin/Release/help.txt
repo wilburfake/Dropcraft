@@ -1,0 +1,8 @@
+First Launch
+On first launch dropcraft will propt you that your config file is empty, to fix this click the options button then press browse now choose you dropbox folder. After doing so you WILL need to restart dropcraft in order for it to re-read the config file.
+
+Uploading
+To upload type the name of your new backup in the left box and click upload, make sure to read all the messages and then wait as dropcraft uploads your backup to dropbox.
+
+Downloading
+To download a backup simply enter the name of your backup in the box on the right then press download, then a box will appear asking you if you are sure you want to overwrite your current files answer yes and dropcraft will download your backup.
