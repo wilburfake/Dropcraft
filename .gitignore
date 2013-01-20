@@ -2,10 +2,11 @@
 ## Eclipse
 #################
 
+[Dd]ebug/
+
 *.pydevproject
 .project
 .metadata
-bin/
 tmp/
 *.tmp
 *.bak
@@ -46,8 +47,7 @@ Setup/
 My Project/
 
 # Build results
-[Dd]ebug/
-[Rr]elease/
+
 *_i.c
 *_p.c
 *.ilk
