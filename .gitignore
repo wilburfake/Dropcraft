@@ -140,7 +140,7 @@ Desktop.ini
 *.egg
 *.egg-info
 dist
-build
+
 eggs
 parts
 
@@ -167,3 +167,7 @@ pip-log.txt
 
 *.vshost
 *.vshost.*
+
+[Bb]in
+[Bb]in/
+bin
